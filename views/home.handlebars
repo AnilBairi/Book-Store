@@ -1,0 +1,12 @@
+<h1>
+  {{title}}
+</h1>
+<ul class="list-group">
+  {{#each books}}
+    <li class="list-group-item">
+      <a href="/books/{{this._id}}">
+        {{this.title}}
+      </a>
+    </li>
+  {{/each}}
+</ul>

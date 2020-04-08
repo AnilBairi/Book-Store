@@ -1,0 +1,8 @@
+<h1>{{book.title}}</h1>
+<h5>Written by {{author}}</h5>
+<p>{{book.body}}</p>
+
+{{#isEqual user.id book.author}}
+<a href="/books/edit/{{book._id}}" class="btn btn-primary">Edit</a>
+<a href="#" data-id="{{book._id}}" class="btn btn-danger delete-book">Delete</a>
+{{/isEqual}}
